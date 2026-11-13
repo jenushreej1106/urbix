@@ -1,59 +1,239 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🏙️ URBIX – Smart City Civic Complaint Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**URBIX** is a web-based Smart City Civic Complaint Management System designed to connect citizens with city administrators and staff. It helps citizens report public issues, track complaint progress, and stay informed about city services.
 
-## About Laravel
+The platform provides separate dashboards for Citizens, Admins, and Staff to make complaint management more organized, transparent, and efficient.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## ✨ Key Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Citizen Portal** – Citizens can register, log in, and access their dashboard.
+- **Complaint Reporting** – Report civic problems with descriptions and images.
+- **Complaint Tracking** – View submitted complaints and monitor their status.
+- **Admin Dashboard** – Manage complaints, users, and city-related activities.
+- **Staff Dashboard** – View assigned complaints and manage their progress.
+- **Role-Based Access** – Separate access permissions for Citizens, Admins, and Staff.
+- **Smart City Interface** – Modern city-themed homepage and interactive sections.
+- **City Information** – Explore city services, emergency services, and updates.
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 👥 User Modules
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 1. Citizen Module
+- Citizen registration and login.
+- View Citizen Dashboard.
+- Report civic complaints.
+- Upload complaint images.
+- View My Complaints.
+- Track complaint status.
 
-## Laravel Sponsors
+### 2. Admin Module
+- Admin login.
+- View Admin Dashboard.
+- Manage complaints.
+- Update complaint status.
+- Monitor city complaint activities.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 3. Staff Module
+- Staff login.
+- View Staff Dashboard.
+- Access complaint information.
+- Manage complaint progress.
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 🛠️ Technologies Used
 
-## Contributing
+| Technology | Purpose |
+|---|---|
+| Laravel 12 | Backend Framework |
+| PHP 8.2 | Server-side Programming |
+| SQLite | Database |
+| HTML5 | Page Structure |
+| CSS3 | Styling and Layout |
+| JavaScript | Interactive Features |
+| Bootstrap | Responsive UI Components |
+| Three.js | 3D Visual Elements |
+| GSAP | Animations |
+| Git & GitHub | Version Control |
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 🎨 Design
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+URBIX uses a modern futuristic smart-city design with:
 
-## Security Vulnerabilities
+- Dark city-themed interface.
+- Neon blue and purple visual elements.
+- Interactive 3D city presentation.
+- Responsive page layouts.
+- Animated user interface elements.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## ⚙️ Installation & Setup
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Prerequisites
+
+Make sure you have installed:
+
+- PHP 8.2 or higher
+- Composer
+- Node.js and NPM
+- Laravel-compatible PHP extensions
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/jenushreej1106/urbix.git
+```
+
+### Step 2: Open the Project
+
+```bash
+cd urbix
+```
+
+### Step 3: Install PHP Dependencies
+
+```bash
+composer install
+```
+
+### Step 4: Create Environment File
+
+```bash
+Copy-Item .env.example .env
+```
+
+### Step 5: Generate Application Key
+
+```bash
+php artisan key:generate
+```
+
+### Step 6: Create SQLite Database
+
+If the database file does not already exist:
+
+```powershell
+New-Item database/database.sqlite -ItemType File
+```
+
+Make sure the `.env` file uses SQLite:
+
+```env
+DB_CONNECTION=sqlite
+```
+
+### Step 7: Run Database Migrations
+
+```bash
+php artisan migrate
+```
+
+### Step 8: Install Frontend Dependencies
+
+```bash
+npm install
+```
+
+### Step 9: Build Frontend Assets
+
+```bash
+npm run build
+```
+
+### Step 10: Create Storage Link
+
+```bash
+php artisan storage:link
+```
+
+### Step 11: Start the Development Server
+
+```bash
+php artisan serve
+```
+
+Open the application in your browser:
+
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+## 📁 Project Structure
+
+```text
+URBIX/
+│
+├── app/
+│   ├── Http/
+│   └── Models/
+│
+├── bootstrap/
+├── config/
+├── database/
+│   ├── migrations/
+│   └── seeders/
+│
+├── public/
+│   ├── css/
+│   ├── js/
+│   └── images/
+│
+├── resources/
+│   └── views/
+│
+├── routes/
+│   └── web.php
+│
+├── storage/
+├── tests/
+│
+├── .env.example
+├── artisan
+├── composer.json
+├── package.json
+└── README.md
+```
+
+---
+
+## 🔐 Security
+
+- Role-based access control.
+- Authentication-protected pages.
+- Environment configuration using `.env`.
+- Sensitive environment and database files are excluded from Git.
+
+---
+
+## 🚀 Future Enhancements
+
+- Real-time complaint notifications.
+- Advanced complaint analytics.
+- Interactive city map integration.
+- Mobile application integration.
+- AI-based complaint categorization.
+
+---
+
+## 👩‍💻 Developer
+
+**Developed as a Smart City Web Application Project.**
+
+**Project Name:** URBIX  
+**Project Type:** Smart City Civic Complaint Management System  
+**Framework:** Laravel 12  
+**Repository:** `jenushreej1106/urbix`
+
+---
+
+## 📄 License
+
+This project is developed for educational and portfolio purposes.
