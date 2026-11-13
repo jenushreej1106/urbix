@@ -1,0 +1,474 @@
+.page-hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 150px 7% 80px;
+    background:
+        radial-gradient(ellipse at 80% 30%, #38226b44, transparent 45%),
+        radial-gradient(ellipse at 10% 70%, #00d9ff15, transparent 45%),
+        #080B12;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.page-hero h1,
+.dashboard-section h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(40px, 7vw, 85px);
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.page-hero h1 span,
+.dashboard-section h1 span,
+.auth-box h1 span {
+    color: #00D9FF;
+}
+
+.page-description {
+    max-width: 650px;
+    color: #8993a6;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.page-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.page-content {
+    padding: 60px 7% 120px;
+}
+
+.page-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.page-card {
+    padding: 35px;
+    min-height: 260px;
+    border: 1px solid #ffffff15;
+    background: linear-gradient(145deg, #151e2d, #0b1019);
+    transition: .4s;
+}
+
+.page-card:hover {
+    transform: translateY(-10px);
+    border-color: #00D9FF;
+    box-shadow: 0 0 35px #00d9ff20;
+}
+
+.card-number {
+    color: #00D9FF;
+    font-family: 'Orbitron';
+    font-size: 12px;
+}
+
+.card-icon {
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.page-card h3 {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.page-card p {
+    color: #8993a6;
+    font-size: 12px;
+    line-height: 2;
+}
+
+/* AUTH */
+
+.auth-section {
+    min-height: 100vh;
+    padding: 140px 20px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, #142641, #080B12 70%);
+}
+
+.auth-box {
+    width: 100%;
+    max-width: 500px;
+    padding: 45px;
+    border: 1px solid #00d9ff35;
+    background: #101725;
+    box-shadow: 0 0 50px #00d9ff10;
+}
+
+.auth-box h1 {
+    font-family: 'Orbitron';
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.auth-box > p {
+    color: #8993a6;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.auth-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-box label {
+    font-size: 12px;
+    margin: 15px 0 8px;
+}
+
+.auth-box input {
+    background: #080B12;
+    border: 1px solid #ffffff20;
+    color: white;
+    padding: 15px;
+    outline: none;
+    border-radius: 4px;
+}
+
+.auth-box input:focus {
+    border-color: #00D9FF;
+}
+
+.auth-box button {
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.auth-bottom {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #8993a6;
+}
+
+.auth-bottom a {
+    color: #00D9FF;
+    text-decoration: none;
+}
+
+/* DASHBOARD */
+
+.dashboard-section {
+    min-height: 100vh;
+    padding: 160px 7% 100px;
+}
+
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 55px 0;
+}
+
+.stat-card,
+.dashboard-panel {
+    padding: 30px;
+    background: #111a29;
+    border: 1px solid #ffffff15;
+}
+
+.stat-card > span {
+    color: #00D9FF;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.stat-card h2 {
+    font-family: 'Orbitron';
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.stat-card p {
+    font-size: 11px;
+    color: #8993a6;
+}
+
+.dashboard-panel h2 {
+    font-family: 'Orbitron';
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.quick-actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.quick-actions a {
+    padding: 20px;
+    background: #080B12;
+    border: 1px solid #ffffff15;
+    color: #00D9FF;
+    text-decoration: none;
+    font-size: 13px;
+    transition: .3s;
+}
+
+.quick-actions a:hover {
+    border-color: #00D9FF;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #8993a6;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+@media(max-width: 800px) {
+
+    .page-card-grid,
+    .dashboard-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .page-hero {
+        padding: 130px 5% 70px;
+    }
+
+    .page-content {
+        padding: 50px 5%;
+    }
+
+    .auth-box {
+        padding: 25px;
+    }
+
+    .quick-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+    }
+
+}
+
+/* URBIX COMPLAINT REPORT PAGE */
+
+.report-page {
+    min-height: 100vh;
+    padding: 160px 7% 100px;
+
+    background:
+        radial-gradient(circle at 10% 10%, #00d9ff12, transparent 35%),
+        radial-gradient(circle at 90% 50%, #8b5cf618, transparent 35%),
+        #080B12;
+}
+
+.report-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 65px;
+}
+
+.report-heading h1 {
+    font-family: 'Orbitron';
+    font-size: clamp(45px, 7vw, 80px);
+    line-height: 1.2;
+}
+
+.report-heading h1 span {
+    color: #00D9FF;
+}
+
+.report-heading p {
+    color: #8993a6;
+    font-size: 13px;
+    line-height: 2;
+    margin-top: 25px;
+}
+
+.report-form-container {
+    max-width: 850px;
+    margin: auto;
+    padding: 50px;
+    background: linear-gradient(145deg, #141e30, #0b111c);
+    border: 1px solid #00d9ff35;
+    box-shadow: 0 0 50px #00d9ff0c;
+    border-radius: 10px;
+}
+
+.form-title {
+    margin: 40px 0 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffff15;
+}
+
+.form-title span {
+    color: #00D9FF;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.form-title h2 {
+    font-family: 'Orbitron';
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    color: #dce4f0;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 16px;
+    color: white;
+    background: #080e19;
+    border: 1px solid #ffffff20;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'Poppins';
+    font-size: 12px;
+}
+
+.form-group select option {
+    background: #101725;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #00D9FF;
+    box-shadow: 0 0 15px #00d9ff15;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input[type="file"] {
+    padding: 13px;
+}
+
+.form-group small {
+    margin-top: 10px;
+    color: #8993a6;
+    font-size: 10px;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.location-button {
+    padding: 14px 20px;
+    color: #00D9FF;
+    background: #00d9ff12;
+    border: 1px solid #00d9ff50;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.location-button:hover {
+    background: #00d9ff25;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 18px;
+    color: #080B12;
+    background: linear-gradient(100deg, #00D9FF, #8B5CF6);
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Poppins';
+    letter-spacing: 2px;
+    transition: .3s;
+}
+
+.submit-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 30px #00d9ff55;
+}
+
+.form-note {
+    text-align: center;
+    color: #8993a6;
+    font-size: 11px;
+    margin-top: 20px;
+}
+
+.success-message {
+    padding: 25px;
+    margin-bottom: 30px;
+    background: #00e67615;
+    border: 1px solid #00e67660;
+    border-radius: 6px;
+    color: #00e676;
+}
+
+.success-message h2 {
+    margin-bottom: 12px;
+}
+
+.success-message p {
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.error-message {
+    padding: 20px;
+    margin-bottom: 25px;
+    color: #ff7373;
+    background: #ff333315;
+    border: 1px solid #ff555555;
+}
+
+.error-message p {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+@media(max-width: 650px) {
+
+    .report-page {
+        padding: 120px 5% 60px;
+    }
+
+    .report-form-container {
+        padding: 25px 18px;
+    }
+
+    .location-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+}
